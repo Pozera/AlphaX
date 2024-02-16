@@ -43,8 +43,8 @@ section {
 .header {
     position: fixed;
     width: 100%;
-    height: 70px;
-    padding: 0.7rem 12rem;
+    height: 80px;
+    padding: 0.7rem 7rem 0.7rem 7rem;
     background-color: #0E0E0E;
     display: flex;
     justify-content: space-between;
@@ -64,31 +64,9 @@ section {
     width: 100px;
     cursor: pointer;
 }
-
-.header ul {
-    float: right;
-    margin-right: 20px;
-}
-
-.header ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-.header ul li a {
+.header h1 {
     color: white;
-    font-size: 16px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
 }
-
-a.active,a:hover{
-    background: #c7c8c9;
-    transition: .5s;
-}
-
 
 
 .home {
@@ -109,19 +87,27 @@ a.active,a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-
+#conn {
+    background: white;
+}
+#conn a {
+    color: black;
+}
+#conn a:hover {
+    background: white;
+}
 .con {
     align-items: center;
     padding: 15px 30px;
-    background-color: #FFFFFF;
+    background-color: transparent;
     margin-right: 5px;
-    color: var(--text-color);
+    color: white;
+    border: 1px solid rgb(54, 54, 54);
     font-weight: 400;
     border-radius: 5px;
     cursor: pointer;
 
 }
-
 .con1{
     align-items: center;
     padding: 15px 30px;
@@ -159,14 +145,14 @@ a.active,a:hover{
 
 }
 
-.phone-img {
+.phone {
     padding-top: 60px;
     width: 500px;
 }
 
 .coming{
     color: #FFFFFF;
-    background-image: url("/Images/Backgroundimage.png");
+    background-image: url("../Images/Backgroundimage.png");
     padding: 30px;
     background-position: center;
     background-size: cover;
@@ -235,7 +221,6 @@ a.active,a:hover{
     font-size: 32px;
 
 }
-
 .cont p {
     font-size: 14px;
     font-weight: 400;
@@ -244,7 +229,7 @@ a.active,a:hover{
 
 .alpha{
     color: #FFFFFF;
-    background-image: url("/Images/Mockups.png");
+    background-image: url("../Images/Mockups.png");
     padding: 20px;
     background-position: center;
     background-size: cover;
@@ -572,7 +557,6 @@ input[type=text], select, textarea {
             font-size: 20px;
 
         }
-
         .container {
             align-items: center;
             display: flex;
@@ -618,13 +602,13 @@ input[type=text], select, textarea {
         }
         
         .alpha{
+            display: flex;
             color: #FFFFFF;
-            background-image: url("/Images/Mockups.png");
+            background-image: url("../Images/Mockups.png");
             flex-direction: column;
             padding: 18px;
             background-position: center;
             background-size: cover;
-            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -725,8 +709,10 @@ input[type=text], select, textarea {
         display: flex;
         flex-direction: column;
     }
+    .header h1 {
+        display: none;
+    }
 
    
 
 }
-
